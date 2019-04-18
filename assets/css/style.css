@@ -1,0 +1,102 @@
+
+header h1{
+  padding-left: 60px;
+}
+
+
+.logo{
+  position: fixed;
+  border: thin solid hotpink;
+  padding-top: 4px;
+  box-sizing: border-box;
+  background-color: aqua;
+  color: orange;
+  border-radius: 40%;
+  height:50px;
+  width:50px;
+  text-align: center;
+  box-shadow: 3px 3px 5px #aaaaaa;
+  cursor: pointer;
+  /*transition: all .5s ease-in-out;
+
+  animation: moveShadow 20s infinite;
+  transition: box-shadow 15s ease-in-out;*/
+}
+/*
+.logo:hover{
+  color: #333;
+  background-color: #FFF;
+  box-shadow: 1px 1px 5px #777;
+  animation: spinLogo 2s 1;
+}
+*/
+
+@keyframes moveShadow {
+  0%{
+
+  }
+  25% {
+    box-shadow: -3px 3px 5px rgb(0,255,0);
+  }
+  50% {
+    box-shadow: -3px -3px 5px rgb(255,0,0);
+  }
+  50% {
+    box-shadow: 3px -3px 5px rgb(0,0,255);
+  }
+  100% {
+    
+  }
+}
+
+
+@keyframes pulser {
+  0% {
+    box-sizing: unset;
+  }
+  75% {
+    padding: 10px;
+    margin:-5px;
+    box-sizing: unset;
+  }
+  100% {
+    box-sizing: unset;
+  }
+}
+
+@keyframes spinLogo {
+  0%{
+    
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+@keyframes fontbulger {
+  0% {
+    font-size:10px;
+  }
+  30% {
+    font-size: 10px;
+  }
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
