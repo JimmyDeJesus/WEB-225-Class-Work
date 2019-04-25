@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Welcome to Slash</title>
+		<style>
+			#hashSign {
+				position: fixed;
+				top: 40%;
+			}
+
+
+			.intDiv {
+				border: red dashed thin;
+				position: relative;
+				width: 300px;
+				height: 30px;
+				margin: auto;
+				transition: all 2s ease-in-out;
+				animation: zoomIn 5s linear 2s infinite alternate;
+			}
+
+			#intDiv001 {
+				background-color: #F00;
+				margin-top: -60px;
+			}
+
+			#intDiv002 {
+				background-color: #0F0;
+				margin-top: 60px;
+			}
+
+			#intDiv003,
+			#intDiv004 {
+				height: 300px;
+				width: 30px;
+				/* margin-left: 75px; */
+				margin-top: -130px;
+			}
+
+			#intDiv003 {
+				background-color: #00F;
+				margin-left: 85px;
+			}
+
+			#intDiv004 {
+				background-color: #000;
+				margin-left: 185px;
+			}
+
+			@keyframes zoomIn {
+				from {
+					background-color: red;
+				}
+
+				to {
+					background-color: yellow;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="hashSign">
+			<div class="intDiv" id="intDiv001"></div>
+			<div class="intDiv" id="intDiv003"></div>
+			<div class="intDiv" id="intDiv002"></div>
+			<div class="intDiv" id="intDiv004"></div>
+		</div>
+
+	</body>
+
+</html>
